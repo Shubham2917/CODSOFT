@@ -11,7 +11,6 @@ class ContactManager:
         self.create_widgets()
 
     def create_widgets(self):
-        # Frame for adding a new contact
         add_frame = tk.Frame(self.root)
         add_frame.pack(pady=10)
 
@@ -32,8 +31,7 @@ class ContactManager:
         self.address_entry.grid(row=3, column=1, padx=5, pady=5)
 
         tk.Button(add_frame, text="Add Contact", command=self.add_contact).grid(row=4, columnspan=2, pady=10)
-
-        # Frame for contact list and operations
+        
         list_frame = tk.Frame(self.root)
         list_frame.pack(pady=10)
 
@@ -46,7 +44,6 @@ class ContactManager:
         tk.Button(list_frame, text="Update Contact", command=self.update_contact).grid(row=2, column=0, padx=5, pady=5)
         tk.Button(list_frame, text="Delete Contact", command=self.delete_contact).grid(row=2, column=1, padx=5, pady=5)
 
-        # Frame for displaying contact details
         details_frame = tk.Frame(self.root)
         details_frame.pack(pady=10)
 
