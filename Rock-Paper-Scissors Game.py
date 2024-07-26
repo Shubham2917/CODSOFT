@@ -13,7 +13,6 @@ class RockPaperScissorsGame:
         self.create_widgets()
     
     def create_widgets(self):
-        # Create buttons for user choices
         self.rock_button = tk.Button(self.root, text="Rock", command=lambda: self.play_game("rock"))
         self.rock_button.pack(pady=10)
         
@@ -22,12 +21,10 @@ class RockPaperScissorsGame:
         
         self.scissors_button = tk.Button(self.root, text="Scissors", command=lambda: self.play_game("scissors"))
         self.scissors_button.pack(pady=10)
-        
-        # Label to display the result
+     
         self.result_label = tk.Label(self.root, text="", font=("Helvetica", 14))
         self.result_label.pack(pady=10)
-        
-        # Label to display the scores
+
         self.score_label = tk.Label(self.root, text="User: 0, Computer: 0", font=("Helvetica", 14))
         self.score_label.pack(pady=10)
         
